@@ -9,6 +9,9 @@
   <h1>Create new task</h1>
   <div class="home">
     <%= form_for(@task, html: {class: "ttl"}) do |f| %>
+     <div><%= f.label :state %></div>
+     <div><%= f.select :state, [['todo', 'todo'], ['doing', 'doing'], ['done', 'done']] , {class: 'form-control'} %></div>
+     <div></div>
      <div><%= f.label :title %></div>
      <div><%= f.text_field :title , placeholder: "Task Name" %></div>
      <div><%= f.submit 'Create new Task',:class => 'btn btn-square' %></div>

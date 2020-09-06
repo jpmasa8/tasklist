@@ -11,6 +11,8 @@
         <thead>
             <tr>
                 <h2 class="ttl">Task List</h2>
+                <th>Status</th>
+                <th>&emsp;</th>
                 <th>Date</th>
                 <th>&emsp;</th>
                 <th>Description</th>
@@ -19,6 +21,8 @@
         <tbody>
             <% @tasks.each do |task| %>
                 <tr>
+                    <td><%= task.state %></td>
+                    <td>&emsp;</td>
                     <td><%= task.created_at.strftime("%Y-%m-%d") %></td>
                     <td>&emsp;</td>
                     <td><%= task.title %></td>
