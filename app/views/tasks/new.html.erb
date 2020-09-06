@@ -1,7 +1,21 @@
-<h1>新規タスク</h1>
-<%= form_for(@task) do |f| %>
- <div><%= f.label :title %></div>
- <div><%= f.text_field :title %></div>
- <div><%= f.submit %></div>
-<% end %>
-<%= link_to '戻る', tasks_path %>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tasklist</title>
+</head>
+<body>
+  <h1>Create new task</h1>
+  <div class="home">
+    <%= form_for(@task, html: {class: "ttl"}) do |f| %>
+     <div><%= f.label :title %></div>
+     <div><%= f.text_field :title , placeholder: "Task Name" %></div>
+     <div><%= f.submit 'Create new Task',:class => 'btn btn-square' %></div>
+    <% end %>
+    <%= link_to 'Back', tasks_path, class: 'btn btn-square1' %>
+  </div>
+    
+  
+</body>
+</html>

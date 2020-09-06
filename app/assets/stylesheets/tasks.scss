@@ -1,3 +1,102 @@
 // Place all the styles related to the Tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+  margin: 0;
+  padding: 0;
+  
+  h1 {
+    margin: 0px auto;
+    background: #464646;
+    color: white;
+    padding: 10px 0 10px 0;
+  }
+    //edit&new.html
+  .home {
+      margin: auto;
+      text-align: center;
+    
+    input[type="text"] {
+        width: 300px;
+        height: 30px;
+    }
+  }
+    //index.html
+  table {
+    margin: auto;
+    //text-align: center;
+    tbody {
+      tr {
+        td {
+          margin-right: 20px;
+          
+        }
+      }
+    }
+  }
+  .in {
+    padding-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+  //ボタンの場所  
+.btn-square {
+      display: inline-block;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      background: #f8b500;/*ボタン色*/
+      color: #FFF;
+      //border-bottom: solid 4px #627295;
+      border-radius: 3px;
+      //f_submitの枠線けし
+      border: none;
+      }
+    .btn-square:active {
+      /*ボタンを押したとき*/
+      -webkit-transform: translateY(4px);
+      transform: translateY(4px);/*下に動く*/
+      //border-bottom: none;/*線を消す*/
+      }
+          .btn-square1 {
+             display: inline-block;
+             padding: 0.3em 1em;
+             text-decoration: none;
+             background: #464646;/*ボタン色*/
+             color: #FFF;
+             //border-bottom: solid 4px #627295;
+             border-radius: 3px;
+             }
+            .btn-square1:active {
+             /*ボタンを押したとき*/
+              -webkit-transform: translateY(4px);
+              transform: translateY(4px);/*下に動く*/
+              //border-bottom: none;/*線を消す*/
+             }
+          .btn-square2 {
+             display: inline-block;
+             padding: 0.3em 1em;
+             text-decoration: none;
+             background: #B8223C;/*ボタン色*/
+             color: #FFF;
+             //border-bottom: solid 4px #627295;
+             border-radius: 3px;
+             }
+            .btn-square2:active {
+             /*ボタンを押したとき*/
+              -webkit-transform: translateY(4px);
+              transform: translateY(4px);/*下に動く*/
+              //border-bottom: none;/*線を消す*/
+              }
+   
+         .ttl {
+          padding-top: 40px;
+          padding-bottom: 10px;
+          font-size: 50px;
+          //border-bottom: 1px solid #d3d3d3;
+          margin: 0 auto;
+        }
+       
+    
+}
